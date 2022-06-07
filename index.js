@@ -24,7 +24,7 @@ console.log(fel, lel)
 // console.log(fs)
 
 app.get('/', (req, res)=>{
-    res.send('Home page')
+    res.send('Home page is looking nice')
 })
 const port = process.env.PORT || 3000;
 //server 
