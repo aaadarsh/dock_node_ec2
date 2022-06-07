@@ -1,0 +1,25 @@
+PATH module
+---------------------------------------------------
+1. path.join()  // concatenate the paths provided 
+
+2. path.resolve() just does the following
+
+from left to right-
+
+    concatenate the right most parameters with / directly with the root path to make an absolute path (check the examples)
+    and then concatenates anything without / as a directory
+
+using sergey's example
+
+path.resolve('/a', 'b', 'c');     returns    C:\a\b\c
+path.resolve('/a', '/b', 'c');    returns    C:\b\c
+path.resolve('/a', '/b', '/c');   returns    C:\c
+
+
+
+//example below 
+
+console.log(path.resolve(__dirname, "..", "test.js"))    //relative path of the directory 
+console.log(path.join(__dirname, "..", "file.txt", "test.js"))
+//Double dots '..' in quotes in the above example does the same as cd .. or ../ 
+//it takes the directory up one folder
