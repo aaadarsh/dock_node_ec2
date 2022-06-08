@@ -7,6 +7,6 @@ let words = ['sky', 'wood', 'forest', 'falcon',
 
 let fel = _.first(words);
 let lel = _.last(words);
-console.log(fel, lel)
+// console.log(fel, lel)
 
 // module.exports;

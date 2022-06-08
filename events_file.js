@@ -5,18 +5,18 @@ let customEvent = new EventEmitter()   //create a new instance of eventEmitter()
 //We listen for the event first and the create it, it shoulb be placed in the said order
 //customEvent.on() is for listening the event that is created and sent 
 customEvent.on('response', ()=>{
-    console.log('1. directory opened...')
+    // console.log('1. directory opened...')
 })
 
 customEvent.on('response', ()=>{
-    console.log('2. Second listener is listening and reading directory opened...')
+    // console.log('2. Second listener is listening and reading directory opened...')
 })
 customEvent.on('response', ()=>{
-    console.log('3. Listening to the response through the event listener')
+    // console.log('3. Listening to the response through the event listener')
 })
 
 customEvent.on('response_name', (a, b)=>{
-    console.log(`My name is ${a} and I am ${b} years old`)
+    // console.log(`My name is ${a} and I am ${b} years old`)
     // return `My name is ${a} and I am ${b} years old as of now`
 })
 //customEvent.event creation 
